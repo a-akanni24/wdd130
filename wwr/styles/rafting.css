@@ -1,12 +1,16 @@
+/*GENERAL RESET DEFAULT STYLE FOR THE SITE */
+
+/* Pseudo variable codes */
 :root {
-    --primary-color: #EBC26F; /* Hunyadi Yellow */
-    --secondary-color: #605F5E; /* Davy's Grey */    
-    --accent1-color: #1D3461; /* Delft Blue */
-    --accent2-color: #1F487E; /* Polynesian blue */
+    --primary-color: #1D3461; /* Delft Blue */
+    --secondary-color:#1F487E; /* Polynesian blue */
+    --accent1-color: #EBC26F; /* Hunyadi Yellow */
+    --accent2-color: #605F5E; /* Davy's Grey */  
     --heading-font: 'Bebas Neue', sans-serif;
     --body-text-font: 'Roboto Flex', sans-serif;
 }
 
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +19,7 @@
 
 body {
     font-family: var(--body-text-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header, main, footer {
@@ -33,10 +37,37 @@ nav, p, section,article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-} 
 
+/* HEADER ELEMENTS */
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 8px;
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+
+/* MAIN ELEMENTS */
+
+/* Style the hero section using absolute positioning and a style of your choice. */
 .hero {
     position: relative;
 }
@@ -54,9 +85,11 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: #fff;
 }
+
+/* INDIVIDUAL STYLING FOR THE BODY ELEMENT */
 
 /* Style the article using absolute positioning and a style of your choice. */ 
 
@@ -66,8 +99,8 @@ article {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
     padding: 16px;
     border-radius: 8px;
 }
@@ -75,5 +108,41 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+    margin: 10px;
 }
+
+section {
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    margin-bottom: 8px;
+    text-align: center;
+
+
+}
+
+figure {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+section img {
+    width: 100px;
+    height: auto;
+}
+
+
+footer {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+} 
 
