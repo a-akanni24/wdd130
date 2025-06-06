@@ -45,12 +45,6 @@ header {
     align-items: center;
 }
 
-.main-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 nav a {
     color: var(--primary-color);
     text-decoration: none;
@@ -68,6 +62,12 @@ nav a:hover {
 /* MAIN ELEMENTS */
 
 /* Style the hero section using absolute positioning and a style of your choice. */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hero {
     position: relative;
 }
@@ -111,27 +111,46 @@ article {
     margin: 10px;
 }
 
+/* Section 1 styling */
 section {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
     color: var(--secondary-color);
     background-color: var(--accent1-color);
     margin-bottom: 8px;
     text-align: center;
-
-
 }
 
-figure {
-    display: flex;
-    justify-content: space-evenly;
+section h2 {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
 }
 
 
 section img {
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+}
+
+/* Figure section */
+figure {
+    margin: 0;
+    text-align: center;
+    font-size: xx-small;
+}
+
+figure img {
+    width: 150px;
     height: auto;
 }
 
 
+/* Styling the Footer Elements */
 footer {
     display:flex;
     justify-content: flex-end;
