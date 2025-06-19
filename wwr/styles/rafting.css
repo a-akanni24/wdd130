@@ -267,7 +267,7 @@ figcaption {
 
 /* CONTACT PAGE FORM STYLING */
 .contact-form {
-    background-color: rgba(129, 141, 192, 0.156);
+    background-color: rgba(39, 64, 177, 0.156);
     padding: 2rem;
     text-align: center;
 
@@ -342,88 +342,4 @@ button {
     display: block;
 }
 
-
-/* TRIPS PAGE STYLING */
-/* Main Section Styles */
-main {
-    background-color: #ccc;
-}
-
-.trip-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1rem;
-    border-bottom: 4px solid #fff;
-}
-
-.trip-text, .trip-image {
-    flex: 1 1 45%;
-    margin: 1rem;
-}
-
-.trip-text h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.trip-text p {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.trip-text button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.trip-text button:hover {
-    background-color: #444;
-}
-
-.trip-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-}
-
-/* Footer Section Styles */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #87CEFA;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .socialmedia {
-    margin-top: 1rem;
-}
-
-footer .socialmedia a img {
-    margin: 0 0.5rem;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-}
 
