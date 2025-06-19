@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <meta name="description" content="Provides contact information and a form to obtain user input including questions and comments.">
+    <meta name="author" content="Akanni Ademola">
+    <!--FONT Links: Roboto Flex and Bebas Neue-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/wwr-logo.jpg" alt="Rafting Site Logo">
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Image section -->
+        <section class="features">
+            <div class="feature-box">
+                <figure>
+                    <img src="images/happy-employees-1.jpg" alt="Helmet Set">
+                    <figcaption>Happy are we</figcaption>
+                </figure>
+            </div>
+            <div class="feature-box">
+                <figure>
+                    <img src="images/happy-employees-2.jpg" alt="Helmet Set">
+                    <figcaption>We are happier when you are</figcaption>
+                </figure>
+            </div>
+             <div class="feature-box">
+                <figure>
+                    <img src="images/happy-employees-3.jpg" alt="The Big View">
+                    <figcaption>Row with Us in happiness</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Company Info -->
+        <section class="company-info">
+            <div class="info">
+                <h2>Company Info</h2>
+                <h3>Idaho, United States</h3>
+                <p>📍Middle Fork, Salmon River, ID</p>
+                <p>📧 contact@wwr.com</p>
+                <p>📞 +123-456-7890</p>
+            </div>
+
+            <div class="map">
+                <div class="placeholder-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15994.636157396635!2d-114.77409410861634!3d44.87290179504557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a7eb759a405875%3A0x8682ebe7beed5957!2sMiddle%20Fork%20Salmon%20River!5e0!3m2!1sen!2sng!4v1750307903166!5m2!1sen!2sng" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <p>Send us a message and we will respond within 24 hours</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type here" required></textarea>
+                </div>
+
+                <fieldset class="message-purpose">
+                    <legend>What is the purpose of the message:</legend>
+                    <label><input type="radio" name="purpose" value="general" /> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+                </fieldset>
+
+                <div class="newsletter">
+                    <label>
+                    <input type="checkbox" name="subscribe" />
+                    Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://app.moqups.com/k4MBFyyqvUDjcJKjsHCLbMUIh6E15EPU/view/page/ad64222d5">Wireframe</a>
+        <p>&copy;2025🌴White Water Rafting🌴Ademola Akanni</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/fb-icon.webp" alt="facebook icon" width="30">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/ig-icon.webp" alt="instagram icon" width="30">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/x-icon.webp" alt="twitter icon" width="30">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+
